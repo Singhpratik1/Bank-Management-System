@@ -1,0 +1,11 @@
+
+.info{
+    width: 100%;
+}
+table{
+    width: 100%;
+}
+th,td{
+    text-align: left;
+    border: 2p solid black;
+}

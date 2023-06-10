@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+<?php
+    $conn=mysqli_connect('localhost','root','','bank');
+    if(!$conn){
+        die("not connected".mysqil_connect_error());
+    }
+?>
+<form action="test.html" method="post">
+    <input type="text" placeholder="NAMe" name="Name" id="Name">
+    <input type="email" placeholder="email" name="Email" id="Email">
+    <input type="number" placeholder="number" name="Mobile" id="Mobile">
+    <input type="number" placeholder="adhaar" name="Adhaar" id="Adhaar"> 
+    <button onclick=<?php echo $pay;?>>submit</button>
+    <?php
+     
+    if(isset($_POST['Name']) && isset($_POST['Email']) && isset($_POST['Mobile']) && isset($_POST['Adhaar'])){
+        function validate($data){
+            $data=trim($data);
+            $data=stripslashes($data);
+            $data=htmlspecialchars($data);
+            return $data;
+        }
+        $name=validate($_POST['Name']);
+        $email=validate($_POST['Email']);
+        $mobile=validate($_POST['Mobile']);
+        $adhaar=validate($_POST['Adhaar']);
+        $query="SELECT * FROM bank_table WHERE Name='$name'AND Email='$email'AND Mobile='$mobile'AND Adhaar='$adhaar'";
+        $result=mysqli_query($conn,$query);
+        if(mysqli_num_rows($result)>0){
+            $row=mysqli_fetch_assoc($result);
+            if($row['Name']===$name && $row['Email']===$email && $row['Mobile']===$mobile && $row['Adhaar']===$adhaar){
+                $payit="pay";
+            ?>
+                    
+    <?php
+        if($payit=="pay"){
+    ?>
+    
+    <?php
+        }
+    ?>      
+            <?php
+            }
+            else{
+                header("location:test.php?error=icorrect details");
+                exit();
+            }
+        }
+        else{
+            echo "login failed";
+        }
+    }
+
+    ?>
+    
+</form>
+
+//id change krna ha button ka jb success ho jye echo
+<button onclick="pay()">pppppp</button>
+<script src="swet.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

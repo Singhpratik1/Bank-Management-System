@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    text-decoration: none;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+section{
+    min-height: 100vh;
+    opacity: 1;
+    background-color: #fff;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1.title{
+    font-size: 70px;
+    font-weight: 900;
+}
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+
+.btn-facebook {
+    background-color: #405D9D;
+    color: #fff;
+}
+.btn-twitter {
+    background-color: #42AEEC;
+    color: #fff;
+}
+.card bg-light{
+    display: flex;
+}
+.input-group{
+    display: flex;
+}
+form{
+    justify-content: center;
+}
+
+@media (min-width: 1200px){
+   .container {
+     width: 100%;
+   }
+}
+@media(min-width: 500px){
+    .card{
+        width: 100%;
+    }
+}

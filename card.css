@@ -1,0 +1,8 @@
+*{margin: 0;padding: 0}.container{background: linear-gradient(110deg, #969899 60%, #4c4b52 60%);min-height:100vh;display:flex;justify-content:center;align-items:center}.card{height:200px;width:350px;border-radius:10px;background-image: linear-gradient(to right top, #555553, #0c0e0e)}.chip-image{padding:12px; display: flex; color: #909292;}.chip-image img{width:50px}.card-details{padding:0px 15px}.card-number{font-size:25px;color:#fff}.date{font-size:15px;padding:4px 0px;color:#fff}.picture{display:flex;justify-content:end;padding:0px 24px}.picture img{width :40px}
+span img{
+    margin-left: 66%;
+    margin-top: -5%;
+}
+.chip-image span{
+    margin-left: 48%;
+}

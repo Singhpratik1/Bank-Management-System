@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    text-decoration: none;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+section{
+    min-height: 100vh;
+    opacity: 1;
+    background-color: #fff;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1.title{
+    font-size: 70px;
+    font-weight: 900;
+}
+footer{
+    position: relative;
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 2px 3px 2px #504747;
+}
+footer span a{
+    color: #0649be;
+    text-decoration: none;
+}
+footer span a:hover{
+    width: 100%;
+    text-decorzation: underline;
+    overflow: hidden;
+}
+

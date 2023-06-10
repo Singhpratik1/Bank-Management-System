@@ -1,0 +1,93 @@
+.passbook{
+    width: 75%;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px 2px red;
+    margin-left: 15%;
+}
+.titlepass{
+    text-align: center;
+}
+.titlepass h3{
+    font-size: 30px;
+}
+.con{
+    display: flex;
+}
+.ph{
+    display: flex;
+    padding: 11px 18px;
+}
+.ph h4{
+    width: 28%;
+}
+.ph h5{
+    width: 100%;
+    font-size: 18px;
+}
+.ph1{
+    display: flex;
+    border: 1px solid black;
+}
+.ph1 h4{
+    width: 17%;
+    margin-left: 4%;
+}
+.ph1 h5{
+    width: 38%;
+    font-size: 18px;
+}
+.photo{
+    display: flex;
+    width: 50%;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.info{
+    width: 50%;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.ph{
+    width: 100%;
+    border: 1px solid black;
+}
+.con2{
+    text-align: center;
+    width: 30%;
+}
+.phh{
+    width: 100%;
+}
+.phh span{
+    text-align: center;
+}
+.phh img{
+    width: 100%;
+}
+.con1{
+    width: 80%;
+}
+.mo{
+    width: 100%;
+    display: inline-flex;
+    flex: 0 0 60%;
+}
+.mo h3{
+    font-size: 24px;
+}
+.mo h3 span{
+    color: blue;
+}
+.mo h2{
+    margin-left: 17%;
+    margin-right: 30%;
+}
+.detail{
+    margin-top: 20px;
+    min-height: 100vh;
+    width: 100%;
+}
+.detail tr{
+    padding: 2px 2px;
+    width: 100%;
+}

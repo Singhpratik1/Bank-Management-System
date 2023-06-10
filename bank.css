@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    text-decoration: none;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+section{
+    min-height: 100vh;
+    opacity: 1;
+    background: linear-gradient(730deg, #f5f6f6 60%, #a9cbda 60%);;
+}
+.banking-service{
+    display: flex;
+    justify-content: center;
+    padding: 5px 70px;
+}
+.service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 32%;
+    padding: 5px 8px;
+    color: #0649be;
+    -webkit-box-shadow:4px 6px 16px 4px #0a0a0a;
+    flex-direction: column;
+    margin: 15px;
+    background: linear-gradient(360deg, #bdc2c4 71%, #dfdde9 60%);
+}
+.heading{
+
+}
+.heading h3{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Play', sans-serif;
+}
+.form1{
+    padding: 2px 2px;
+    width: 100%;
+}
+.input1{
+    padding: 18px 2px;
+    width: 45%;
+    color: #0c0c0c;
+}
+::placeholder{
+    font-family: 'Play', sans-serif;
+    color: #070202;
+}
+input{
+    font-family: 'Play', sans-serif;
+    border-radius: 5px;
+    height: 40px;
+    width: 200%;
+    font-size: 24px;
+    background-color: #b0b0aa;
+    color: #0a0808;
+}
+.pay{
+    font-family: 'Play', sans-serif;
+    border-radius: 5px;
+    height: 40px;
+    width: 200%;
+    font-size: 24px;
+    background-color: #b0b0aa;
+    color: #0a0808;
+}
+button{
+    border-radius: 4px;
+    width: 20vh;
+    height: 6vh;
+    font-size: 26px;
+    font-family: 'Play', sans-serif;
+    color: #0649be;
+}
+button:hover{
+    background-color: #070202;
+    color: #fff;
+}
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 2px 3px 2px #504747;
+    margin-top: 20%;
+}
+footer span a{
+    color: #0649be;
+    text-decoration: none;
+}
+footer span a:hover{
+    width: 80%;
+    text-decorzation: underline;
+    overflow: hidden;
+}
+.ani{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.temp{
+    
+}
+.ani div{
+    width: 100%;
+    animation: slide 12s linear infinite;
+    display: block;
+    padding-left: 200%;
+}
+.ani p{
+    color: red;
+    width: 100%;
+    position: absolute;
+    font-size: 25px;
+}
+.m2{
+    margin-left: 40%;
+    width: 0%;
+    height: 20%;
+    box-sizing: border-box;
+    background-color: #504747;
+    text-align: center;
+}
+.cont{
+    text-align: center;
+    width: 100%;
+}
+.extrapp{
+    width: 30%;
+    background-color: #0a0808;
+}
+
+@keyframes slide{
+    100%{
+        transform: translate(-100%,0);
+        margin: 0px -1200px 10px;
+    }
+}
+@media(max-width:600px){
+    .service{
+        width: 140%;
+        flex: 0 0 40%;
+        margin-left: -56px;
+        
+    }
+    .banking-service{
+        flex-direction: column;
+    }
+    
+}
+
