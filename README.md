@@ -1,4 +1,4 @@
-# BankManagementSystem
+# Bank-Management-System
 
 Welcome to the Bank Management System project! This system is designed to provide a seamless and secure banking experience for users. Below, you'll find an overview of the project and how to get started.
 
